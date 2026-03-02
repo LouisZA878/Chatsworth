@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatsworth Jumping Castle Hire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🏰</span>
+        <span class="logo-text">Chatsworth <strong>Jumping Castle Hire</strong></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#inventory">Inventory</a></li>
+        <li><a href="#about">Info</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#shop" class="nav-shop-btn">Shop</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Since 1999 · Trusted by Families</p>
+      <h1 class="hero-title">Jump Into the Fun with<br /><span>Chatsworth Jumping Castle Hire</span></h1>
+      <p class="hero-subtitle">We've been dedicated to bringing joy, laughter, and unforgettable memories to every celebration — one bounce at a time.</p>
+      <a href="#inventory" class="btn btn-primary">Explore Our Collection</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-container about-grid">
+      <div class="about-text">
+        <span class="section-label">About Us</span>
+        <h2>Chatsworth Jumping Castle Hire</h2>
+        <p>Since 1999, Chatsworth Jumping Castle Hire has been creating cherished memories for families in our community. We were born from a love of bringing people together — making every celebration a little brighter and every laugh a little louder.</p>
+        <p>We pour our hearts into what we do, ensuring each inflatable is sparkling clean, meticulously cared for, and ready to fill your day with endless fun. Our team treats every event as if it were our own, providing warm, personalized service to make your special moments truly unforgettable.</p>
+        <p>From birthday parties to community gatherings, we're here to help you create magical experiences that will be remembered for years to come.</p>
+        <a href="#contact" class="btn btn-secondary">Learn More</a>
+      </div>
+      <div class="about-image">
+        <div class="image-placeholder">
+          <span class="placeholder-icon">🎪</span>
+          <p>Chatsworth Jumping Castle Hire</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFLATABLES / INVENTORY -->
+  <section class="inventory" id="inventory">
+    <div class="section-container">
+      <span class="section-label">What We Offer</span>
+      <h2>Our Exciting Inflatables</h2>
+      <p class="section-desc">From classic bounce houses to thrilling water slides and everything in between, we have an extensive selection for every occasion.</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Classic Bounce Houses</h3>
+          <p>The timeless crowd-pleaser. Perfect for any age group and ideal for birthday parties, school events, and more.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💦</div>
+          <h3>Water Slides</h3>
+          <p>Beat the heat with our thrilling water slides. A guaranteed hit at summer parties and outdoor gatherings.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎠</div>
+          <h3>Themed Castles</h3>
+          <p>From princess castles to superhero arenas — themed inflatables that bring your child's imagination to life.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏢</div>
+          <h3>Corporate Events</h3>
+          <p>Make your next corporate event memorable. We provide inflatables suited for team-building and community gatherings.</p>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary">View Our Inventory</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="section-container">
+      <span class="section-label">See It in Action</span>
+      <h2>Our Gallery</h2>
+      <p class="section-desc">Take a look at our range of inflatables — clean, colourful, and ready for your next event.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox('images/gallery-1.png', 'Classic Bounce Castle')">
+          <img src="images/gallery-1.png" alt="Classic Bounce Castle" />
+          <div class="gallery-overlay"><span class="gallery-zoom">&#128269;</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/gallery-2.png', 'Princess Castle')">
+          <img src="images/gallery-2.png" alt="Princess Castle" />
+          <div class="gallery-overlay"><span class="gallery-zoom">&#128269;</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/gallery-3.png', 'Castle with Slide')">
+          <img src="images/gallery-3.png" alt="Castle with Slide" />
+          <div class="gallery-overlay"><span class="gallery-zoom">&#128269;</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/gallery-4.png', 'Tropical Water Slide Castle')">
+          <img src="images/gallery-4.png" alt="Tropical Water Slide Castle" />
+          <div class="gallery-overlay"><span class="gallery-zoom">&#128269;</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/gallery-5.png', 'Bounce Castle — Kids Love It!')">
+          <img src="images/gallery-5.png" alt="Bounce Castle with Kid" />
+          <div class="gallery-overlay"><span class="gallery-zoom">&#128269;</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/gallery-6.png', 'Giant Water Slide')">
+          <img src="images/gallery-6.png" alt="Giant Water Slide" />
+          <div class="gallery-overlay"><span class="gallery-zoom">&#128269;</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/gallery-7.png', 'Barney Themed Castle')">
+          <img src="images/gallery-7.png" alt="Barney Themed Castle" />
+          <div class="gallery-overlay"><span class="gallery-zoom">&#128269;</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/gallery-8.png', 'Spider-Man Themed Castle')">
+          <img src="images/gallery-8.png" alt="Spider-Man Themed Castle" />
+          <div class="gallery-overlay"><span class="gallery-zoom">&#128269;</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('images/gallery-9.png', 'Happy Birthday Banner')">
+          <img src="images/gallery-9.png" alt="Happy Birthday Banner" />
+          <div class="gallery-overlay"><span class="gallery-zoom">&#128269;</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script>
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').textContent = caption;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-container">
+      <span class="section-label">Happy Customers</span>
+      <h2>Discover What Our Customers Love About Us</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Chatsworth Jumping Castle Hire made our party a huge success! The bounce house we rented was in excellent condition, and the kids had a blast. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DN</div>
+            <strong>Danielle Naidoo</strong>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I can't thank Chatsworth Jumping Castle Hire enough for their outstanding service. The themed bounce house we rented was a hit at my son's birthday party. It was clean, safe, and simply fantastic!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">KG</div>
+            <strong>Kyle Govender</strong>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"We were thrilled with the water slide we rented from Chatsworth Jumping Castle Hire. The quality of the inflatable was impressive. Thank you for a wonderful experience!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DP</div>
+            <strong>Dayle Petterson</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-container contact-grid contact-grid-3col">
+      <div class="contact-info">
+        <span class="section-label">Reach Out</span>
+        <h2>Get in Touch with Us</h2>
+        <p>Have questions or want to book an inflatable for your next event? Feel free to get in touch. We're here to assist you!</p>
+        <ul class="contact-details">
+          <li>
+            <span class="contact-icon">📍</span>
+            <span>92 Road 743 Montford, Chatsworth</span>
+          </li>
+          <li>
+            <span class="contact-icon">✉️</span>
+            <a href="mailto:info@chatsworthjumpingcastlehire.com">info@chatsworthjumpingcastlehire.com</a>
+          </li>
+          <li>
+            <span class="contact-icon">📞</span>
+            <a href="tel:0844044655">084 404 4655</a>
+          </li>
+          <li>
+            <span class="contact-icon">💬</span>
+            <a href="https://wa.me/27844044655" target="_blank">WhatsApp Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="map-wrap">
+        <h3 class="map-heading">Find Us Here</h3>
+        <div class="map-container">
+          <iframe
+            src="https://maps.google.com/maps?q=92+Road+743+Montford+Chatsworth+South+Africa&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Chatsworth Jumping Castle Hire Location">
+          </iframe>
+        </div>
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=92+Road+743+Montford+Chatsworth+South+Africa"
+          target="_blank"
+          class="btn btn-secondary map-directions-btn">
+          Get Directions
+        </a>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Jane Smith" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="083 000 0000" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell us about your event..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-icon">🏰</span>
+        <span>Chatsworth Jumping Castle Hire</span>
+      </div>
+      <div class="footer-socials">
+        <a href="https://wa.me/27844044655" target="_blank" class="social-link whatsapp" title="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="#" class="social-link facebook" title="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2024 Chatsworth Jumping Castle Hire. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
