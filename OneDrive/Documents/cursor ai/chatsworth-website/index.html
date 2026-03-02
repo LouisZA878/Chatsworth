@@ -211,7 +211,7 @@
           </li>
           <li>
             <span class="contact-icon">✉️</span>
-            <a href="mailto:info@chatsworthjumpingcastlehire.com">info@chatsworthjumpingcastlehire.com</a>
+            <a href="mailto:chatsworthjumpingcastlehire@gmail.com">chatsworthjumpingcastlehire@gmail.com</a>
           </li>
           <li>
             <span class="contact-icon">📞</span>
@@ -246,22 +246,30 @@
       </div>
 
       <div class="contact-form-wrap">
-        <form class="contact-form">
+        <form class="contact-form"
+              action="https://formsubmit.co/chatsworthjumpingcastlehire@gmail.com"
+              method="POST">
+          <!-- Formsubmit config -->
+          <input type="hidden" name="_subject" value="New Booking Enquiry — Chatsworth Jumping Castle Hire" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://yash17107.github.io/chatsworth-jumping-castle-hire-/thankyou.html" />
+
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Jane Smith" />
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
           </div>
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="jane@example.com" />
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
           </div>
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" placeholder="083 000 0000" />
+            <input type="tel" id="phone" name="phone" placeholder="083 000 0000" />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="4" placeholder="Tell us about your event..."></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your event..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full">Send Message</button>
         </form>
